@@ -21,7 +21,7 @@ int main()
 
 	clock_t finish = clock();
 
-	// calculate taken time by finding difference (finish - start) and
+	// calculate taken time by finding difference (finish - start)
 	// divide by CLOCKS_PER_SEC to convert to seconds
 	time_spent += (double)(finish - start) / CLOCKS_PER_SEC;
 
