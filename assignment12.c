@@ -7,7 +7,8 @@
 #include <sys/stat.h> 
 #include <fcntl.h> 
   
-int main() { 
+int main() 
+{ 
   
     struct rlimit lim; 
     //Get limits andd print
