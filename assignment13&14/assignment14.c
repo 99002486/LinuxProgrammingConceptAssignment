@@ -88,7 +88,6 @@ int main()
     default:
         waitpid(-1,0,0);
         printf("execution success\n");
-        n3=fork();
         break;
     }
 
