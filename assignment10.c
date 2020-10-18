@@ -14,10 +14,12 @@ int main()
     if(ret==0)
     {
         printf("Enter pid:");
-        char pid[1000];
+        char pid[1000],signal_num[10];
         scanf("%s",pid);
+        printf("Enter Signal number/name with '-' :");
         int exec_ret;
-        exec_ret=execlp("kill","kill","-9",pid,NULL);
+        scanf("%s",signal_num);
+        exec_ret=execlp("kill","kill",signal_num,pid,NULL);
         if(exec_ret<0)
         {
             perror("execlp");
@@ -29,7 +31,7 @@ int main()
     else
     {
         waitpid(-1,0,0);
-        printf("killed..");
+        printf("Signal sent..");
     }
     
 }
