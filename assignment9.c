@@ -3,7 +3,7 @@
  
 int main()
 {
-    time_t Time= time(NULL);
+    time_t Time=time(NULL);
     struct  tm current_tm = *localtime(&Time);
      
 
