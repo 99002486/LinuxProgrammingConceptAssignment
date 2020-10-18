@@ -1,6 +1,5 @@
 #include <pthread.h> 
 #include <stdio.h> 
-#include <stdlib.h> 
   
 // Size of array 
 #define max 16 
